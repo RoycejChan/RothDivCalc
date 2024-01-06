@@ -4,20 +4,10 @@ import requests
 from dotenv import load_dotenv
 import os
 
-# Load environment variables at the beginning of your application
-load_dotenv()
-
-# Get the current file's directory
-current_directory = os.path.dirname(os.path.realpath(__file__))
-
-# Navigate up one level to the root folder (assuming my_project is the root)
-root_directory = os.path.dirname(os.path.dirname(current_directory))
-
-# Specify the path to the .env file relative to the root folder
-dotenv_path = os.path.join(root_directory, '.env')
-
-# Load environment variables from the .env file
+# Load .env file from two levels up
+dotenv_path = os.path.join(os.path.dirname(__file__), '..', '..', '.env')
 load_dotenv(dotenv_path)
+# Load environment variables from the .env file
 
 DEBUG = os.getenv('DEBUG')
 SECRET_KEY = os.getenv('SECRET_KEY')
