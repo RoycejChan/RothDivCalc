@@ -5,7 +5,14 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
-dotenv_path = '../.env'
+# Get the current file's directory
+current_directory = os.path.dirname(os.path.realpath(__file__))
+
+# Navigate up one level to the root folder (assuming my_project is the root)
+root_directory = os.path.dirname(os.path.dirname(current_directory))
+
+# Specify the path to the .env file relative to the root folder
+dotenv_path = os.path.join(root_directory, '.env')
 
 # Load environment variables from the .env file
 load_dotenv(dotenv_path)
