@@ -5,6 +5,14 @@ from dotenv import load_dotenv
 load_dotenv()
 import os
 
+dotenv_path = '../.env'
+
+# Load environment variables from the .env file
+load_dotenv(dotenv_path)
+
+DEBUG = os.getenv('DEBUG')
+SECRET_KEY = os.getenv('SECRET_KEY')
+
 def get_stock_dividend_data(request):
 
     api_key = os.getenv("API_KEY")
