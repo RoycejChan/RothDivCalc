@@ -11,7 +11,7 @@ load_dotenv(dotenv_path)
 os.environ.get('API_KEY')
 
 api_key = os.getenv("API_KEY")
-
+print(api_key)
 def get_stock_dividend_data(request):
 
     today = date.today()
