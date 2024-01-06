@@ -2,8 +2,9 @@ from django.http import JsonResponse
 from datetime import date, timedelta
 import requests
 from dotenv import load_dotenv
-load_dotenv()
 import os
+# Load environment variables at the beginning of your application
+load_dotenv()
 
 # Get the current file's directory
 current_directory = os.path.dirname(os.path.realpath(__file__))
