@@ -9,12 +9,10 @@ dotenv_path = os.path.join(os.path.dirname(__file__), '..', '..', '.env')
 load_dotenv(dotenv_path)
 # Load environment variables from the .env file
 
-DEBUG = os.getenv('DEBUG')
-SECRET_KEY = os.getenv('SECRET_KEY')
+api_key = os.getenv("API_KEY")
 
 def get_stock_dividend_data(request):
 
-    api_key = os.getenv("API_KEY")
     today = date.today()
     # Calculate yesterday's date
     yesterday = today - timedelta(days=1)
