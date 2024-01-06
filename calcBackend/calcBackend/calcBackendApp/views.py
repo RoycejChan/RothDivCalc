@@ -3,6 +3,7 @@ from datetime import date, timedelta
 import requests
 from dotenv import load_dotenv
 import os
+
 # Load environment variables at the beginning of your application
 load_dotenv()
 
