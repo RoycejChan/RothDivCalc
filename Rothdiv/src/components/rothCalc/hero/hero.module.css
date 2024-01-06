@@ -1,0 +1,32 @@
+.hero p {
+    width: 50%;
+    margin: 0 auto; /* Center the <p> elements within the container */
+  }
+
+/* Ipad */
+  @media (max-width: 768px) {
+    .hero p {
+      width: 75%;
+    }
+    }
+
+/* Iphone 12 pro */
+    @media (max-width: 390px) {
+    
+    .hero {
+      padding:3rem !important;
+    }
+    .hero p {
+      width: 100%;
+      font-size:1rem;
+    }
+
+    .hero h1 {
+      width: 100%;
+      font-size:4rem;
+      text-align:center;
+    }
+    
+    
+
+    }

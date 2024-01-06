@@ -1,0 +1,115 @@
+
+
+.lightModebg {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark mode styles */
+.darkModebg {
+  background-color: black;
+  color: #fff;
+}
+
+.darkModepart {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+.darkModepart input {
+  background-color: white;
+  color:black;
+}
+
+.darkModepart label {
+  color:rgb(168, 168, 168);
+}
+.darkModepart span {
+  color: black;
+}
+.darkModepart .rothCalculation {
+  background-color:#5e43f3;
+  color:white;
+}
+
+.darkMode .rothContainer {
+  border:4px solid #5e43f3;
+}
+.rothContainer {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  }
+.userInputs {
+    flex:1;
+
+}
+  
+.inputPair {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    font-weight: 700;
+    margin-bottom:35px;
+}
+.inputPair input {
+    font-size: 1.3rem;
+    padding:.75rem;
+    padding-left:1.5rem;
+    border:2px solid black;
+    border-radius:10px;
+}
+  
+.currencyCode{
+  position:absolute;
+  left:8px;
+  bottom:13px;
+  font-size: 1.3rem;
+
+}
+
+.percentCode {
+  position:absolute;
+  right:15px;
+  bottom:13px;
+  font-size: 1.3rem;
+}
+
+.maxRadio {
+  display: flex;
+  gap:1rem;
+}
+
+.rothGraph {
+  flex:2.75;
+}
+
+.rothCalculation {
+  background-color: #f3f4f8;
+}
+
+/* Ipad */
+@media (max-width: 768px) {
+.rothContainer {
+  flex-direction: column;
+}
+  }
+
+/* Iphone 12 pro */
+  @media (max-width: 390px) {
+  
+  .endBalance {
+    font-size:1.5rem !important;
+    text-align: center;
+    width:100% !important
+  }
+
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

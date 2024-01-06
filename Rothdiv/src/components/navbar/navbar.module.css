@@ -1,0 +1,12 @@
+.navBar {
+    background-color: #000000;
+    color: white;
+
+  }
+
+@media (max-width: 390px) {
+    .navBar {
+      flex-direction:column;
+      gap: .5rem;
+    }
+}
