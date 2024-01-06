@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Replace with the actual origin of your React app
-    "https://rothdivcalc.onrender.com"
+    "https://rothdividendcalc.onrender.com"
 ]
 
 ROOT_URLCONF = 'calcBackend.urls'
