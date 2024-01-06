@@ -72,7 +72,7 @@ export default function DivCalc() {
 
         console.log(ticker);
         try {
-          const response = await fetch(`http://127.0.0.1:8000/api/get_stock_dividend_data/?ticker=${ticker}`);
+          const response = await fetch(`http://127.0.0.1:8000/?ticker=${ticker}`);
           const data = await response.json();
           setTickerData(data);
           console.log(data);

@@ -35,7 +35,7 @@ def get_stock_dividend_data(request):
 
     priceR = requests.get(priceUrl)
     priceData = priceR.json()
-    tickerPrice = priceData['close']
+    tickerPrice = priceData.get('close', 0.0)
 # TO GET TICKER's FULL COMPANY NAME
     tickerUrl = f'https://api.polygon.io/v3/reference/tickers/{tickerSymbol}?apiKey={api_key}'
 
