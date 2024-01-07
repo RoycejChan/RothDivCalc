@@ -24,7 +24,7 @@ def load_env_files(start_dir):
 # Use the directory of the current script or Django project
 load_env_files(os.path.dirname(__file__))
 
-api_key = os.environ.get("API_KEY")
+api_key = os.environ.get("SECRET_KEY")
 def get_stock_dividend_data(request):
 
     today = date.today()
