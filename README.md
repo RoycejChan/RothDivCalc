@@ -1,4 +1,4 @@
-# RothDivCalc  
+# RothDivCalc  🧮🏦
 
 A web application to estimate future ROTH IRA balance and dividend stock return on investments based off factors from user input's.
 
