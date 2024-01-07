@@ -19,7 +19,7 @@ def load_env_files(start_dir):
 
         current_dir = os.path.dirname(current_dir)
 
-    print("Error: No .env file found in parent directories.")
+    print("Error: No .env file found in parents directories.")
 
 # Use the directory of the current script or Django project
 load_env_files(os.path.dirname(__file__))
