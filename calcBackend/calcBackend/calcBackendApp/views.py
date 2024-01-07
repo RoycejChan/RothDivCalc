@@ -73,7 +73,7 @@ def get_stock_dividend_data(request):
     divResults = divData.get('results', []) 
     if divResults:
         dividend = divResults[0]
-        dividendFrequency = dividend.get('frequency', 'no information available')
+        dividendFrequency = dividend.get('frequency', 'no information available sir')
         dividendPayout = dividend.get('cash_amount', "no information available")
 
         divData = {
