@@ -31,3 +31,5 @@ Backend: Python, Django, Render
 - I wanted to build an app that I have interest in and I walso wanted to learn django for backend. I learned that I like nodeJS better, but Ill pull through. <br/>
 
 - Code structure and organization wise, I wasn't worried so much because it's not such a big application and I would only be working on it, I didn't want to make it more complcited with props and extra over organization for a simple application.
+
+- And the commits are funky because when trying to upload to Render hosting service, I ran into problems in django and had to keep recommiting until It worked, and by moving the front end and backend into one folder for better organization on repos, so that they're together unlike my other repos, I accidently deleted the main repo, that's why most of the commit message's are funky, because they are just commits of trying to re push for render to retry uploading the backend, the main commits got deleted.
