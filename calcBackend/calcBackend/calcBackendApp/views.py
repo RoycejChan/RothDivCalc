@@ -1,16 +1,15 @@
 from django.http import JsonResponse
 from datetime import date, timedelta
 import requests
-from dotenv import load_dotenv
 import os
 
-# Load .env file from two levels up
-dotenv_path = os.path.join(os.path.dirname(__file__), '..', '..', '.env')
-load_dotenv(dotenv_path)
-# Load environment variables from the .env file
-os.environ.get('API_KEY')
-
-api_key = os.getenv("API_KEY")
+with open('.env', 'r') as file:
+    lines = file.readlines()
+    for line in lines:
+        key, value = line.strip().split('=')
+        os.environ[key] = value
+    
+api_key = os.environ.get("API_KEY")
 print(api_key)
 def get_stock_dividend_data(request):
 
