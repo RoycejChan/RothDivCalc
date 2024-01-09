@@ -80,7 +80,7 @@ export default function RothCalc() {
       tempBalance += tempBalance * (expectedRor / 100);
       newBalance = tempBalance;
   
-      // Create a new netWorth object for the current age
+      // Create a new netWorth object for current age
       const netWorth = {
         balance: tempBalance,
         age: newAge,
