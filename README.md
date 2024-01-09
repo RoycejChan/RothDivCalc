@@ -6,7 +6,7 @@ REMINDER: The API the site uses for dividend stock search up bases the stock pri
           The Hosting service is also on a free plan, so after requesting from the server ( searching from a stock ), it should take about a one minute delay before the api get up and running.
 
 <img src="https://i.gyazo.com/0971896ab93f49265415f9b94613862c.png" alt="Image from Gyazo"  style="width:1500px; height:500px"/>
-
+<img src="https://i.gyazo.com/13e3084addea830e07bc016b3cdbacbc.gif" alt="Image from Gyazo" style="width:1500px; height:500px"/>
 ## 👇 Getting Started 👇<br/>
 ## Description
 
