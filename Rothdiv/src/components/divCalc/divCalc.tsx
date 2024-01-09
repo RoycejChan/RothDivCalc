@@ -123,19 +123,7 @@ export default function DivCalc() {
             }},[tickerData])
             
 const calculate = () => {
-              isCalulated(true);
-              setScrollToCharts(true);
-              setCalcChart([]);
-              function percentageToDecimal(percentage:number) {
-                return percentage / 100;
-              }
-              
 
-          if (yearInvested <= 0  || startingPrincipal <= 0) {
-            alert('Starting Principal and Years Invested are Required');
-            isCalulated(false);
-            return;
-          }
 // starting = 10,000
 // investmentValue(total) = 10,000
 //annual contribution = 5,000
@@ -166,7 +154,19 @@ const calculate = () => {
                 //don't add dividends to total
 
             // add+ annual contribution to += investmentValue
+            isCalulated(true);
+            setScrollToCharts(true);
+            setCalcChart([]);
+            function percentageToDecimal(percentage:number) {
+              return percentage / 100;
+            }
+            
 
+        if (yearInvested <= 0  || startingPrincipal <= 0) {
+          alert('Starting Principal and Years Invested are Required');
+          isCalulated(false);
+          return;
+        }
     let totalInvestment:number = startingPrincipal;
 
     let totalDividendsEarned:number = 0;
