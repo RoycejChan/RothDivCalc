@@ -3,28 +3,8 @@ from datetime import date, timedelta
 import requests
 import os
 
-def load_env_files(start_dir):
-    current_dir = os.path.abspath(start_dir)
+api_key = os.environ.get("API_KEY")
 
-    while current_dir != '/':  # Stop when reaching the root directory
-        env_file_path = os.path.join(current_dir, '.env')
-        
-        if os.path.exists(env_file_path):
-            with open(env_file_path, 'r') as file:
-                lines = file.readlines()
-                for line in lines:
-                    key, value = line.strip().split('=')
-                    os.environ[key] = value
-            return
-
-        current_dir = os.path.dirname(current_dir)
-
-    print("Error: No .env file found in parents directories.")
-
-# Use the directory of the current script or Django project
-load_env_files(os.path.dirname(__file__))
-
-api_key = os.environ.get("SECRET_KEY")
 def get_stock_dividend_data(request):
 
     today = date.today()
